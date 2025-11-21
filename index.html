@@ -1,43 +1,111 @@
-<body>
-  <header>
-    <nav>
-      <div class="logo">Diki Wahyudin</div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Diki Wahyudin</title>
 
-    <section id="hero">
-      <div class="hero-text">
-        <p>Hello, I’m</p>
-        <h1>Diki Wahyudin</h1>
-        <h2>[Posisi Kamu]</h2>
-        <p class="tagline">[Tagline singkat kamu di sini]</p>
-        <div class="hero-buttons">
-          <a href="#" class="btn-primary">Download CV</a>
-          <a href="#contact" class="btn-outline">Contact Me</a>
+  <!-- CSS eksternal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <span class="logo-circle">DW</span>
+        <div class="logo-text">
+          <strong>Diki Wahyudin</strong>
+          <span>[Posisi kamu]</span>
         </div>
       </div>
-      <div class="hero-image">
-        <!-- Foto profil / ilustrasi -->
-      </div>
-    </section>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="about"></section>
-    <section id="skills"></section>
-    <section id="experience"></section>
-    <section id="projects"></section>
-    <section id="education"></section>
-    <section id="contact"></section>
-  </main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <p class="hero-label">Portfolio Web Dummy</p>
+        <h1>Hi, saya <span>Diki Wahyudin</span></h1>
+        <p class="hero-role">[Posisi yang ingin dilamar]</p>
+        <p class="hero-text">
+          Ini teks dummy. Nanti kamu bisa isi dengan deskripsi singkat tentang diri kamu,
+          misalnya: kamu minat di bidang apa, dan ingin kerja sebagai apa.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary">Download CV</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2025 Diki Wahyudin — All Rights Reserved.</p>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Tulis deskripsi singkat tentang latar belakang kamu di sini. Ini masih dummy,
+        jadi silakan ganti nanti. 3–4 kalimat saja sudah cukup.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span class="skill-badge">HTML &amp; CSS</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">[Skill lain]</span>
+        <span class="skill-badge">[Skill lain]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>[Nama Project Dummy]</h3>
+        <p>
+          Deskripsi singkat project dummy. Nanti bisa kamu ganti dengan project asli,
+          misalnya tugas kampus, latihan web, atau project pribadi.
+        </p>
+        <p class="project-tech">Tech: HTML · CSS · JS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        HR bisa menghubungi kamu lewat kontak di bawah ini. Silakan ganti dengan data asli.
+      </p>
+      <ul class="contact-list">
+        <li>Email: <strong>emailkamu@example.com</strong></li>
+        <li>WhatsApp: <strong>+62 8xx xxxx xxxx</strong></li>
+        <li>LinkedIn: <strong>linkedin.com/in/usernamekamu</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Diki Wahyudin · Simple Portfolio Dummy</p>
+    </div>
   </footer>
 </body>
+</html>
