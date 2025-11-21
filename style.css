@@ -1,7 +1,5 @@
-/* FONT */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-/* BASE */
 * {
   margin: 0;
   padding: 0;
@@ -137,7 +135,7 @@ a {
   flex-wrap: wrap;
 }
 
-/* BUTTONS */
+/* BUTTON */
 .btn {
   padding: 0.6rem 1.3rem;
   border-radius: 999px;
