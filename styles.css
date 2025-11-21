@@ -1,20 +1,23 @@
-/* ====== STYLE DASAR ====== */
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* BASE */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #020617;
-  color: #e5e7eb;
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  color: #0f172a;
   line-height: 1.6;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -24,69 +27,70 @@ a {
   padding: 0 1.25rem;
 }
 
-/* ====== NAVBAR ====== */
+/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e4e4e7;
+  padding: 0.7rem 0;
   z-index: 10;
-  background: rgba(2, 6, 23, 0.95);
-  border-bottom: 1px solid #1f2937;
-  backdrop-filter: blur(10px);
 }
 
 .nav-inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0.6rem 0;
+  align-items: center;
 }
 
 .logo {
   display: flex;
+  gap: 0.6rem;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .logo-circle {
-  width: 32px;
-  height: 32px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #3b82f6, #0ea5e9);
+  width: 34px;
+  height: 34px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
+  align-items: center;
+  border-radius: 999px;
   font-weight: 600;
+  font-size: 0.85rem;
+  background: #2563eb;
   color: white;
 }
 
 .logo-text strong {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 .logo-text span {
   font-size: 0.75rem;
-  color: #9ca3af;
+  color: #64748b;
 }
 
 .nav-links {
   display: flex;
-  gap: 1.25rem;
-  font-size: 0.85rem;
+  gap: 1.3rem;
+  font-size: 0.87rem;
+  font-weight: 500;
 }
 
 .nav-links a {
-  color: #9ca3af;
+  color: #64748b;
 }
 
 .nav-links a:hover {
-  color: #e5e7eb;
+  color: #2563eb;
 }
 
-/* ====== HERO ====== */
+/* HERO */
 .hero {
-  padding: 2.4rem 0 2rem;
-  border-bottom: 1px solid #111827;
+  padding: 3rem 0 2.3rem;
+  border-bottom: 1px solid #e4e4e7;
 }
 
 .hero-inner {
@@ -95,153 +99,157 @@ a {
 
 .hero-label {
   display: inline-block;
-  padding: 0.2rem 0.6rem;
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 0.25rem 0.7rem;
   border-radius: 999px;
-  border: 1px solid #1f2937;
   font-size: 0.75rem;
-  color: #9ca3af;
-  margin-bottom: 0.6rem;
+  font-weight: 500;
 }
 
 .hero h1 {
-  font-size: 1.9rem;
-  margin-bottom: 0.3rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0.6rem 0 0.2rem;
 }
 
 .hero h1 span {
-  color: #38bdf8;
+  color: #2563eb;
 }
 
 .hero-role {
-  font-size: 1rem;
-  color: #cbd5f5;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #0f172a;
   margin-bottom: 0.6rem;
 }
 
 .hero-text {
-  font-size: 0.9rem;
-  color: #9ca3af;
-  max-width: 520px;
-  margin-bottom: 1rem;
+  max-width: 580px;
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 1.1rem;
 }
 
 .hero-buttons {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.6rem;
+  flex-wrap: wrap;
 }
 
-/* ====== BUTTON ====== */
+/* BUTTONS */
 .btn {
-  display: inline-block;
-  padding: 0.55rem 1.3rem;
+  padding: 0.6rem 1.3rem;
   border-radius: 999px;
   font-size: 0.85rem;
-  border: 1px solid transparent;
+  font-weight: 600;
   cursor: pointer;
+  border: 2px solid transparent;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #3b82f6, #0ea5e9);
+  background: #2563eb;
   color: white;
 }
 
-.btn-outline {
-  background: transparent;
-  color: #e5e7eb;
-  border-color: #4b5563;
+.btn-primary:hover {
+  background: #1d4ed8;
 }
 
-/* ====== SECTION UMUM ====== */
+/* SECTION */
 .section {
-  padding: 2.2rem 0;
-}
-
-.section-alt {
-  background: #020617;
+  padding: 2.5rem 0;
 }
 
 .section h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.7rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  color: #0f172a;
 }
 
 .section p {
   font-size: 0.9rem;
-  color: #9ca3af;
+  color: #475569;
 }
 
-/* ====== SKILLS ====== */
+/* SKILLS */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
 }
 
 .skill-badge {
-  padding: 0.25rem 0.7rem;
+  padding: 0.28rem 0.8rem;
   border-radius: 999px;
-  border: 1px solid #1f2937;
-  font-size: 0.8rem;
+  border: 1px solid #e4e4e7;
+  background: #f4f4f5;
+  font-size: 0.82rem;
+  font-weight: 500;
 }
 
-/* ====== PROJECTS ====== */
+/* PROJECTS */
 .project-card {
-  margin-top: 0.6rem;
-  padding: 0.9rem 1rem;
-  border-radius: 0.75rem;
-  border: 1px solid #1f2937;
-  background: #020617;
+  margin-top: 0.8rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background: #f4f4f5;
+  border: 1px solid #e4e4e7;
 }
 
 .project-card h3 {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
   margin-bottom: 0.3rem;
 }
 
 .project-card p {
   font-size: 0.9rem;
-  color: #9ca3af;
+  color: #475569;
 }
 
 .project-tech {
-  font-size: 0.8rem;
-  color: #cbd5f5;
   margin-top: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #2563eb;
 }
 
-/* ====== CONTACT ====== */
+/* CONTACT */
 .contact-list {
   margin-top: 0.5rem;
   list-style: none;
   font-size: 0.9rem;
+  color: #475569;
 }
 
-.contact-list li {
-  margin-bottom: 0.25rem;
+.contact-list strong {
+  font-weight: 600;
+  color: #0f172a;
 }
 
-/* ====== FOOTER ====== */
+/* FOOTER */
 .footer {
-  border-top: 1px solid #111827;
-  padding: 1.2rem 0;
-  font-size: 0.8rem;
-  color: #6b7280;
   text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.82rem;
+  color: #6b7280;
+  border-top: 1px solid #e4e4e7;
 }
 
-/* ====== RESPONSIVE ====== */
+/* RESPONSIVE */
 @media (max-width: 600px) {
   .nav-links {
-    display: none; /* Biar simpel dulu di HP */
+    display: none;
   }
 
   .hero {
-    padding-top: 1.7rem;
+    padding-top: 2rem;
   }
 
   .hero h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
